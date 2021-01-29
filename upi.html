@@ -7,16 +7,14 @@
       <h1 style="margin-bottom: 20px; background-color: #8DD362; height: 100px; border-radius: 50%; display: flex; justify-content: center; align-items: center; padding: 6px;">
         ₹ 269999
       </h1>
-      <a href="upi://pay?pa=sanjeev@okaxis&cu=INR&tn=dafdf&am=20" style="text-decoration: none; background-color: #45B7B8; color: #fff; padding: 10px 14px; border-radius: 20px;">PAY NOW</a>
+      <a href="" id="payment_link" style="text-decoration: none; background-color: #45B7B8; color: #fff; padding: 10px 14px; border-radius: 20px;">PAY NOW</a>
     </div>
     <script>
       function getQuery(q) {
          return (window.location.search.match(new RegExp('[?&]' + q + '=([^&]+)')) || [, null])[1];
       }
       var upi_href = 'upi://pay?pa='+getQuery('pa')+'&cu=INR&tn='+getQuery('tn')+'&am='+getQuery('am');
-      console.log(getQuery('pa'));
-      console.log(getQuery('tn'));
-      console.log(getQuery('am'));
+      document.getElementById('payment_link').href = upi_href;
     </script>
   </body>
 </html>
