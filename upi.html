@@ -9,5 +9,13 @@
       </h1>
       <a href="upi://pay?pa=sanjeev@okaxis&cu=INR&tn=dafdf&am=20" style="text-decoration: none; background-color: #45B7B8; color: #fff; padding: 10px 14px; border-radius: 20px;">PAY NOW</a>
     </div>
+    <script>
+      function getQuery(q) {
+         return (window.location.search.match(new RegExp('[?&]' + q + '=([^&]+)')) || [, null])[1];
+      }
+      console.log(getQuery('pa'));
+      console.log(getQuery('tn'));
+      console.log(getQuery('am'));
+    </script>
   </body>
 </html>
