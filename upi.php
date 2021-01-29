@@ -1,8 +1,3 @@
-<?php
-
-  // header('Location: upi://pay?pa='.$_GET['upi_address'].'&cu=INR&appName=SetLUp&tn='.$_GET['upi_notes'].'&am='.$_GET['upi_amount']);
-
-?>
 <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; background-color: #eee; border-radius: 6px; padding-bottom: 20px;">
   <div style="margin-top: 20px; font-size: 20px;">
     Amount to be Paid
