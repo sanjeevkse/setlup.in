@@ -4,5 +4,5 @@
 
 ?>
 <script>
-  location.href = "upi://pay?pa=sanjeev@okaxis&cu=INR&tn=dafdf&am=20";
+  location.href = "https://google.com"; // "upi://pay?pa=sanjeev@okaxis&cu=INR&tn=dafdf&am=20";
 </script>
