@@ -4,5 +4,5 @@
 
 ?>
 <script>
-  location.href = "https://google.com"; // "upi://pay?pa=sanjeev@okaxis&cu=INR&tn=dafdf&am=20";
+  window.location = "https://google.com"; // "upi://pay?pa=sanjeev@okaxis&cu=INR&tn=dafdf&am=20";
 </script>
