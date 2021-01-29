@@ -10,7 +10,7 @@
       <a href="" id="payment_link" style="text-decoration: none; background-color: #45B7B8; color: #fff; padding: 10px 14px; border-radius: 20px;">PAY NOW</a>
     </div>
     <script>
-      getUPIString(payeeAddress, payeeName, payeeMCC, trxnID, trxnRefId, trxnNote, payeeAmount, currencyCode, refUrl) {
+      function getUPIString(payeeAddress, payeeName, payeeMCC, trxnID, trxnRefId, trxnNote, payeeAmount, currencyCode, refUrl) {
         return "upi://pay?pa=" + payeeAddress + "&pn=" + payeeName
             + "&mc=" + payeeMCC + "&tid=" + trxnID + "&tr=" + trxnRefId
             + "&tn=" + trxnNote + "&am=" + payeeAmount + "&cu=" + currencyCode
