@@ -13,6 +13,7 @@
       function getQuery(q) {
          return (window.location.search.match(new RegExp('[?&]' + q + '=([^&]+)')) || [, null])[1];
       }
+      var upi_href = 'upi://pay?pa='+getQuery('pa')+'&cu=INR&tn='+getQuery('tn')+'&am='+getQuery('am');
       console.log(getQuery('pa'));
       console.log(getQuery('tn'));
       console.log(getQuery('am'));
