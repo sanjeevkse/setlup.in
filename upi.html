@@ -13,7 +13,7 @@
       function getQuery(q) {
          return (window.location.search.match(new RegExp('[?&]' + q + '=([^&]+)')) || [, null])[1];
       }
-      var upi_href = 'upi://pay?pa='+getQuery('pa')+'&cu=INR&tn='+getQuery('tn')+'&am='+getQuery('am');
+      var upi_href = 'upi://pay?pa='+getQuery('pa')+'&cu=INR&tn='+getQuery('tn')+'&am='+getQuery('am')+'&pn='+getQuery('pn');
       document.getElementById('payment_link').href = upi_href;
       document.getElementById('inr').innerHTML = getQuery('am');
     </script>
