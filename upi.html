@@ -19,7 +19,7 @@
       function getQuery(q) {
          return (window.location.search.match(new RegExp('[?&]' + q + '=([^&]+)')) || [, null])[1];
       }
-      var upi_href = getUPIString(getQuery('pa'), getQuery('pn'), getQuery('mc'), getQuery('tid'), getQuery('tr'), getQuery('am'), 'INR', getQuery('refUrl'));
+      var upi_href = getUPIString(getQuery('pa'), getQuery('pn'), getQuery('mc'), getQuery('tid'), getQuery('tr'), getQuery('tn'), getQuery('am'), 'INR', getQuery('refUrl'));
       document.getElementById('payment_link').href = upi_href;
       document.getElementById('inr').innerHTML = getQuery('am');
     </script>
