@@ -12,9 +12,9 @@
     <script>
       function getUPIString(payeeAddress, payeeName, payeeMCC, trxnID, trxnRefId, trxnNote, payeeAmount, currencyCode, refUrl) {
         return "upi://pay?pa=" + payeeAddress + "&pn=" + payeeName
-            + "&mc=" + payeeMCC + "&tid=" + trxnID + "&tr=" + trxnRefId
+            + (payeeMCC ? "&mc=" + payeeMCC : '') + (trxnID ? "&tid=" + trxnID : '') + (trxnRefId ? "&tr=" + trxnRefId : '')
             + "&tn=" + trxnNote + "&am=" + payeeAmount + "&cu=" + currencyCode
-            + "&refUrl=" + refUrl;
+            + (refUrl ? "&refUrl=" + refUrl : '');
       }
       function getQuery(q) {
          return (window.location.search.match(new RegExp('[?&]' + q + '=([^&]+)')) || [, null])[1];
